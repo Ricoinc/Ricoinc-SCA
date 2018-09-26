@@ -1,0 +1,9 @@
+{
+    "distroName": "SuiteCommerce Advanced Kilimanjaro",
+    "email": "sarce@ricoinc.com",
+    "account": "3500213",
+    "role": 3,
+    "hostname": "3500213.restlets.api.netsuite.com",
+    "target_folder": "4765186",
+    "email_default": "sarce@ricoinc.com"
+}
