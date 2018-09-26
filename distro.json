@@ -152,6 +152,7 @@
         "suitecommerce/UrlHelper": "2.1.1",
         "suitecommerce/Utilities": "2.3.0",
         "suitecommerce/Wizard": "2.3.1",
+        "suitecommerce/UserPreferences": "1.0.0",
         "third_parties/almond": "0.3.0",
         "third_parties/backbone.js": "1.1.2-custom",
         "third_parties/backbone.stickit": "0.8.0",
@@ -359,7 +360,8 @@
                     "GoogleMap",
                     "GoogleMap.Configuration",
                     "StoreLocatorAccessPoints",
-                    "SC.CCT.Html"
+                    "SC.CCT.Html",
+                    "UserPreferences"
                 ],
                 "amdclean": false,
                 "amdConfig": {

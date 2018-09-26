@@ -370,6 +370,7 @@ require.config({
 		"transaction_line_views_selected_option.tpl": "../processed-templates/transaction_line_views_selected_option.tpl",
 		"transaction_line_views_selected_option_color.tpl": "../processed-templates/transaction_line_views_selected_option_color.tpl",
 		"transaction_line_views_tax.tpl": "../processed-templates/transaction_line_views_tax.tpl",
+		"user_preferences_list.tpl": "../processed-templates/user_preferences_list.tpl",
 		"wizard.tpl": "../processed-templates/wizard.tpl",
 		"wizard_module.tpl": "../processed-templates/wizard_module.tpl",
 		"wizard_step.tpl": "../processed-templates/wizard_step.tpl",
@@ -1025,6 +1026,9 @@ require.config({
 		"Wizard.StepGroup": "../../Modules/suitecommerce/Wizard@2.3.1/JavaScript/Wizard.StepGroup",
 		"Wizard.StepNavigation.View": "../../Modules/suitecommerce/Wizard@2.3.1/JavaScript/Wizard.StepNavigation.View",
 		"Wizard.View": "../../Modules/suitecommerce/Wizard@2.3.1/JavaScript/Wizard.View",
+		"UserPreferences.List.View": "../../Modules/suitecommerce/UserPreferences@1.0.0/JavaScript/UserPreferences.List.View",
+		"UserPreferences.Router": "../../Modules/suitecommerce/UserPreferences@1.0.0/JavaScript/UserPreferences.Router",
+		"UserPreferences": "../../Modules/suitecommerce/UserPreferences@1.0.0/JavaScript/UserPreferences",
 		"backbone.custom": "../../Modules/third_parties/backbone.js@1.1.2-custom/backbone.custom",
 		"backbone.stickit": "../../Modules/third_parties/backbone.stickit@0.8.0/backbone.stickit",
 		"backbone-validation": "../../Modules/third_parties/backbone.validation@0.9.1-custom/backbone-validation",
@@ -1264,6 +1268,13 @@ require.config({
 		}
 	},
 	"findNestedDependencies": true,
+	"preserveFiles": true,
+	"preserveComments": true,
+	"configFile": null,
+	"exclude": [],
+	"excludeShallow": [],
+	"loader": null,
+	"wrapShim": true,
 	"waitSeconds": 0
 });
 require(["SC.Checkout.Starter"])
