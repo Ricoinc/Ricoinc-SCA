@@ -2,12 +2,16 @@ define('UserPreferences.Router'
 , [
     'Backbone'
   , 'UserPreferences.List.View'
+  , 'UserPreferences.Collection'
+  , 'UserPreferences.Model'
 
   ]
 , function
   (
     Backbone
   , UserPreferencesListView
+  , UserPreferencesCollection
+  , UserPreferencesModel
   )
 {
   'use strict';
@@ -23,13 +27,28 @@ define('UserPreferences.Router'
       this.application = application
     }
   
-  , preferencesList: function ()
+    , preferencesList: function ()
     {
+      var collection = new UserPreferencesCollection();
       var view = new UserPreferencesListView
       ({
         application: this.application
-      })
-      view.showContent();
+      , collection: collection
+      });
+  
+      collection.fetch().done(function ()
+      {
+        view.showContent();
+      });
     }
+  , preferencesAdd: function ()
+  {
+    var model = new UserPreferencesModel();
+
+    model.set('type', 1);
+    model.set('value', 'Orange');
+
+    model.save();
+  }
   })
 });
